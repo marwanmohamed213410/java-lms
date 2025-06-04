@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Cources;
-import grades.grades_page;
 import dashboard.dashboard;
 import java.awt.Color;
 import javax.swing.JOptionPane;
@@ -18,6 +17,7 @@ import java.awt.Desktop;
 import assignments.assignments_app;
 import assignments.assignments_app2;
 import assignments.assignments_app3;
+import Time_table.ttable;
 
 /**
  *
@@ -95,6 +95,11 @@ public class cources3 extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/home 1.png"))); // NOI18N
         jButton1.setText(" Home         ");
         jButton1.setPreferredSize(new java.awt.Dimension(324, 69));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         cources.setBackground(new java.awt.Color(194, 232, 248));
         cources.setFont(new java.awt.Font("Alexandria", 0, 24)); // NOI18N
@@ -123,6 +128,11 @@ public class cources3 extends javax.swing.JFrame {
         TTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/schedule 1.png"))); // NOI18N
         TTable.setText(" Time Table  ");
         TTable.setPreferredSize(new java.awt.Dimension(324, 69));
+        TTable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TTableActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/profile 1.png"))); // NOI18N
 
@@ -532,6 +542,20 @@ public class cources3 extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void TTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TTableActionPerformed
+        // TODO add your handling code here:
+        ttable table = new ttable();
+        table.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_TTableActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        dashboard dash = new dashboard();
+        dash.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package assignments;
-import grades.grades_page;
+import Cources.cources;
 import dashboard.dashboard;
 import java.awt.Color;
 import javax.swing.JOptionPane;
@@ -15,7 +15,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.awt.Desktop;
-
+import Cources.cources;
+import Cources.cources2;
+import Cources.cources3;
+import Time_table.ttable;
 
 /**
  *
@@ -60,35 +63,35 @@ public class assignments_app3 extends javax.swing.JFrame {
         HND_btn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel8 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel11 = new javax.swing.JLabel();
         jSeparator10 = new javax.swing.JSeparator();
+        upload_btn = new javax.swing.JButton();
+        upload_btn1 = new javax.swing.JButton();
+        upload_btn2 = new javax.swing.JButton();
+        upload_btn3 = new javax.swing.JButton();
+        Delete_btn3 = new javax.swing.JButton();
+        Delete_btn2 = new javax.swing.JButton();
+        Delete_btn1 = new javax.swing.JButton();
+        open_btn1 = new javax.swing.JButton();
+        open_btn2 = new javax.swing.JButton();
+        open_btn3 = new javax.swing.JButton();
+        open_btn = new javax.swing.JButton();
+        Delete_btn = new javax.swing.JButton();
+        upload_btn8 = new javax.swing.JButton();
+        open_btn8 = new javax.swing.JButton();
+        Delete_btn8 = new javax.swing.JButton();
+        upload_btn9 = new javax.swing.JButton();
+        open_btn9 = new javax.swing.JButton();
+        Delete_btn9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -143,6 +146,11 @@ public class assignments_app3 extends javax.swing.JFrame {
         TTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/schedule 1.png"))); // NOI18N
         TTable.setText(" Time Table  ");
         TTable.setPreferredSize(new java.awt.Dimension(324, 69));
+        TTable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TTableActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/profile 1.png"))); // NOI18N
 
@@ -266,137 +274,17 @@ public class assignments_app3 extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/pdf1.png"))); // NOI18N
         jLabel5.setText("HND Assignment 1                                          10/ 10 / 2025");
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
-        jButton5.setText("Upload");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
-        jButton6.setText("Open");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
-        jButton7.setText("Delete");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
         jLabel6.setFont(new java.awt.Font("Alexandria", 0, 24)); // NOI18N
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/pdf1.png"))); // NOI18N
         jLabel6.setText("HND Assignment 2                                          10/ 10 / 2025");
-
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
-        jButton8.setText("Upload");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
-        jButton9.setText("Open");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
-        jButton10.setText("Delete");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
 
         jLabel7.setFont(new java.awt.Font("Alexandria", 0, 24)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/pdf1.png"))); // NOI18N
         jLabel7.setText("HND Assignment 3                                          10/ 10 / 2025");
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
-        jButton11.setText("Upload");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
-        jButton12.setText("Open");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
-
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
-        jButton13.setText("Delete");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
-
         jLabel8.setFont(new java.awt.Font("Alexandria", 0, 24)); // NOI18N
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/pdf1.png"))); // NOI18N
         jLabel8.setText("HND Assignment 6                                            10/ 10 / 2025");
-
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
-        jButton14.setText("Upload");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
-        jButton15.setText("Open");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
-        jButton16.setText("Delete");
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
-        jButton17.setText("Delete");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
-        jButton18.setText("Open");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
-            }
-        });
-
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
-        jButton19.setText("Upload");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
-            }
-        });
 
         jLabel9.setFont(new java.awt.Font("Alexandria", 0, 24)); // NOI18N
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/pdf1.png"))); // NOI18N
@@ -406,32 +294,152 @@ public class assignments_app3 extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/pdf1.png"))); // NOI18N
         jLabel10.setText("HND Assignment 4                                           10/ 10 / 2025");
 
-        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
-        jButton20.setText("Upload");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-
-        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
-        jButton21.setText("Open");
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
-            }
-        });
-
-        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
-        jButton22.setText("Delete");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
-            }
-        });
-
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel11.setText("                 Assignment                                                  Deadline");
+
+        upload_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
+        upload_btn.setText("Upload");
+        upload_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_btnActionPerformed(evt);
+            }
+        });
+
+        upload_btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
+        upload_btn1.setText("Upload");
+        upload_btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_btn1ActionPerformed(evt);
+            }
+        });
+
+        upload_btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
+        upload_btn2.setText("Upload");
+        upload_btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_btn2ActionPerformed(evt);
+            }
+        });
+
+        upload_btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
+        upload_btn3.setText("Upload");
+        upload_btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_btn3ActionPerformed(evt);
+            }
+        });
+
+        Delete_btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
+        Delete_btn3.setText("Delete");
+        Delete_btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Delete_btn3ActionPerformed(evt);
+            }
+        });
+
+        Delete_btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
+        Delete_btn2.setText("Delete");
+        Delete_btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Delete_btn2ActionPerformed(evt);
+            }
+        });
+
+        Delete_btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
+        Delete_btn1.setText("Delete");
+        Delete_btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Delete_btn1ActionPerformed(evt);
+            }
+        });
+
+        open_btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
+        open_btn1.setText("Open");
+        open_btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                open_btn1ActionPerformed(evt);
+            }
+        });
+
+        open_btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
+        open_btn2.setText("Open");
+        open_btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                open_btn2ActionPerformed(evt);
+            }
+        });
+
+        open_btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
+        open_btn3.setText("Open");
+        open_btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                open_btn3ActionPerformed(evt);
+            }
+        });
+
+        open_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
+        open_btn.setText("Open");
+        open_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                open_btnActionPerformed(evt);
+            }
+        });
+
+        Delete_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
+        Delete_btn.setText("Delete");
+        Delete_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Delete_btnActionPerformed(evt);
+            }
+        });
+
+        upload_btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
+        upload_btn8.setText("Upload");
+        upload_btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_btn8ActionPerformed(evt);
+            }
+        });
+
+        open_btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
+        open_btn8.setText("Open");
+        open_btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                open_btn8ActionPerformed(evt);
+            }
+        });
+
+        Delete_btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
+        Delete_btn8.setText("Delete");
+        Delete_btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Delete_btn8ActionPerformed(evt);
+            }
+        });
+
+        upload_btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/upload1.png"))); // NOI18N
+        upload_btn9.setText("Upload");
+        upload_btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_btn9ActionPerformed(evt);
+            }
+        });
+
+        open_btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/folder1.png"))); // NOI18N
+        open_btn9.setText("Open");
+        open_btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                open_btn9ActionPerformed(evt);
+            }
+        });
+
+        Delete_btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/delete1.png"))); // NOI18N
+        Delete_btn9.setText("Delete");
+        Delete_btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Delete_btn9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -445,69 +453,69 @@ public class assignments_app3 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jSeparator4, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(English_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
                                 .addComponent(IT_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(94, 94, 94)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(HND_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addComponent(jButton5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton7))))
-                            .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jSeparator4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton10))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton13))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton20)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton22))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton19)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton18)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton17))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton14)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton15)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton16)))
+                                .addComponent(HND_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(3, 3, 3))
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(upload_btn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(open_btn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Delete_btn))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(upload_btn1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(open_btn1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Delete_btn1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(upload_btn2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(open_btn2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Delete_btn2))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(upload_btn3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(open_btn3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Delete_btn3))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel9)
                                     .addComponent(jLabel8)
-                                    .addComponent(jLabel10)
                                     .addComponent(jLabel4)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel11))
-                                .addGap(0, 0, Short.MAX_VALUE)))
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel9))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(upload_btn8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(open_btn8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Delete_btn8))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(upload_btn9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(open_btn9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Delete_btn9))))
+                            .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(11, 11, 11))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jSeparator10)
@@ -530,50 +538,57 @@ public class assignments_app3 extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(upload_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(open_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Delete_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(18, 18, 18)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(upload_btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(open_btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Delete_btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(upload_btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(open_btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Delete_btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(upload_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(open_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Delete_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addGap(12, 12, 12)
+                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(upload_btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(open_btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Delete_btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(upload_btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(open_btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Delete_btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -646,79 +661,10 @@ public class assignments_app3 extends javax.swing.JFrame {
 
     private void courcesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_courcesActionPerformed
         // TODO add your handling code here:
+        cources cources = new cources();
+        cources.setVisible(true);
+        dispose();
     }//GEN-LAST:event_courcesActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
 
     private void Home_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Home_btnActionPerformed
         // TODO add your handling code here:
@@ -733,6 +679,421 @@ public class assignments_app3 extends javax.swing.JFrame {
         ass.setVisible(true);
         dispose();
     }//GEN-LAST:event_Assignments_btnActionPerformed
+
+    private void upload_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_btnActionPerformed
+        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF Files", "pdf");
+        fileChooser.setFileFilter(filter);
+
+        int result = fileChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(null, "Selected file: " + selectedFile.getAbsolutePath());
+
+            File folder = new File("assignments");
+            if (!folder.exists()) {
+                folder.mkdirs(); // Create folder if it doesn't exist
+            }
+
+            File destination = new File(folder, selectedFile.getName());
+
+            try {Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                uploadedAssignment3File = destination;  // 💡 Save uploaded file path
+                JOptionPane.showMessageDialog(null, "File uploaded successfully!");
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "File upload failed: " + e.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "File selection cancelled.");
+        }
+    }//GEN-LAST:event_upload_btnActionPerformed
+
+    private void upload_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_btn1ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF Files", "pdf");
+        fileChooser.setFileFilter(filter);
+
+        int result = fileChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(null, "Selected file: " + selectedFile.getAbsolutePath());
+
+            File folder = new File("assignments");
+            if (!folder.exists()) {
+                folder.mkdirs(); // Create folder if it doesn't exist
+            }
+
+            File destination = new File(folder, selectedFile.getName());
+
+            try {Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                uploadedAssignment3File = destination;  // 💡 Save uploaded file path
+                JOptionPane.showMessageDialog(null, "File uploaded successfully!");
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "File upload failed: " + e.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "File selection cancelled.");
+        }
+    }//GEN-LAST:event_upload_btn1ActionPerformed
+
+    private void upload_btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_btn2ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF Files", "pdf");
+        fileChooser.setFileFilter(filter);
+
+        int result = fileChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(null, "Selected file: " + selectedFile.getAbsolutePath());
+
+            File folder = new File("assignments");
+            if (!folder.exists()) {
+                folder.mkdirs(); // Create folder if it doesn't exist
+            }
+
+            File destination = new File(folder, selectedFile.getName());
+
+            try {Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                uploadedAssignment3File = destination;  // 💡 Save uploaded file path
+                JOptionPane.showMessageDialog(null, "File uploaded successfully!");
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "File upload failed: " + e.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "File selection cancelled.");
+        }
+    }//GEN-LAST:event_upload_btn2ActionPerformed
+
+    private void upload_btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_btn3ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF Files", "pdf");
+        fileChooser.setFileFilter(filter);
+
+        int result = fileChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(null, "Selected file: " + selectedFile.getAbsolutePath());
+
+            File folder = new File("assignments");
+            if (!folder.exists()) {
+                folder.mkdirs(); // Create folder if it doesn't exist
+            }
+
+            File destination = new File(folder, selectedFile.getName());
+
+            try {Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                uploadedAssignment3File = destination;  // 💡 Save uploaded file path
+                JOptionPane.showMessageDialog(null, "File uploaded successfully!");
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "File upload failed: " + e.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "File selection cancelled.");
+        }
+    }//GEN-LAST:event_upload_btn3ActionPerformed
+
+    private void Delete_btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_btn3ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            int confirm = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to delete the uploaded file?",
+                "Confirm Deletion",
+                JOptionPane.YES_NO_OPTION);
+
+            if (confirm == JOptionPane.YES_OPTION) {
+                if (uploadedAssignment3File.delete()) {
+                    JOptionPane.showMessageDialog(null, "File deleted successfully!");
+                    uploadedAssignment3File = null; // Clear the reference
+                } else {
+                    JOptionPane.showMessageDialog(null, "File could not be deleted.");
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to delete.");
+        }
+    }//GEN-LAST:event_Delete_btn3ActionPerformed
+
+    private void Delete_btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_btn2ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            int confirm = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to delete the uploaded file?",
+                "Confirm Deletion",
+                JOptionPane.YES_NO_OPTION);
+
+            if (confirm == JOptionPane.YES_OPTION) {
+                if (uploadedAssignment3File.delete()) {
+                    JOptionPane.showMessageDialog(null, "File deleted successfully!");
+                    uploadedAssignment3File = null; // Clear the reference
+                } else {
+                    JOptionPane.showMessageDialog(null, "File could not be deleted.");
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to delete.");
+        }
+    }//GEN-LAST:event_Delete_btn2ActionPerformed
+
+    private void Delete_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_btn1ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            int confirm = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to delete the uploaded file?",
+                "Confirm Deletion",
+                JOptionPane.YES_NO_OPTION);
+
+            if (confirm == JOptionPane.YES_OPTION) {
+                if (uploadedAssignment3File.delete()) {
+                    JOptionPane.showMessageDialog(null, "File deleted successfully!");
+                    uploadedAssignment3File = null; // Clear the reference
+                } else {
+                    JOptionPane.showMessageDialog(null, "File could not be deleted.");
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to delete.");
+        }
+    }//GEN-LAST:event_Delete_btn1ActionPerformed
+
+    private void open_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_open_btn1ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().open(uploadedAssignment3File);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(null, "Cannot open file: " + e.getMessage());
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Desktop is not supported on this system.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to open.");
+        }
+    }//GEN-LAST:event_open_btn1ActionPerformed
+
+    private void open_btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_open_btn2ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().open(uploadedAssignment3File);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(null, "Cannot open file: " + e.getMessage());
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Desktop is not supported on this system.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to open.");
+        }
+    }//GEN-LAST:event_open_btn2ActionPerformed
+
+    private void open_btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_open_btn3ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().open(uploadedAssignment3File);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(null, "Cannot open file: " + e.getMessage());
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Desktop is not supported on this system.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to open.");
+        }
+    }//GEN-LAST:event_open_btn3ActionPerformed
+
+    private void open_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_open_btnActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().open(uploadedAssignment3File);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(null, "Cannot open file: " + e.getMessage());
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Desktop is not supported on this system.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to open.");
+        }
+    }//GEN-LAST:event_open_btnActionPerformed
+
+    private void Delete_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_btnActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            int confirm = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to delete the uploaded file?",
+                "Confirm Deletion",
+                JOptionPane.YES_NO_OPTION);
+
+            if (confirm == JOptionPane.YES_OPTION) {
+                if (uploadedAssignment3File.delete()) {
+                    JOptionPane.showMessageDialog(null, "File deleted successfully!");
+                    uploadedAssignment3File = null; // Clear the reference
+                } else {
+                    JOptionPane.showMessageDialog(null, "File could not be deleted.");
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to delete.");
+        }
+    }//GEN-LAST:event_Delete_btnActionPerformed
+
+    private void upload_btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_btn8ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF Files", "pdf");
+        fileChooser.setFileFilter(filter);
+
+        int result = fileChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(null, "Selected file: " + selectedFile.getAbsolutePath());
+
+            File folder = new File("assignments");
+            if (!folder.exists()) {
+                folder.mkdirs(); // Create folder if it doesn't exist
+            }
+
+            File destination = new File(folder, selectedFile.getName());
+
+            try {Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                uploadedAssignment3File = destination;  // 💡 Save uploaded file path
+                JOptionPane.showMessageDialog(null, "File uploaded successfully!");
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "File upload failed: " + e.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "File selection cancelled.");
+        }
+    }//GEN-LAST:event_upload_btn8ActionPerformed
+
+    private void open_btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_open_btn8ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().open(uploadedAssignment3File);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(null, "Cannot open file: " + e.getMessage());
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Desktop is not supported on this system.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to open.");
+        }
+    }//GEN-LAST:event_open_btn8ActionPerformed
+
+    private void Delete_btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_btn8ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            int confirm = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to delete the uploaded file?",
+                "Confirm Deletion",
+                JOptionPane.YES_NO_OPTION);
+
+            if (confirm == JOptionPane.YES_OPTION) {
+                if (uploadedAssignment3File.delete()) {
+                    JOptionPane.showMessageDialog(null, "File deleted successfully!");
+                    uploadedAssignment3File = null; // Clear the reference
+                } else {
+                    JOptionPane.showMessageDialog(null, "File could not be deleted.");
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to delete.");
+        }
+    }//GEN-LAST:event_Delete_btn8ActionPerformed
+
+    private void upload_btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_btn9ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF Files", "pdf");
+        fileChooser.setFileFilter(filter);
+
+        int result = fileChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(null, "Selected file: " + selectedFile.getAbsolutePath());
+
+            File folder = new File("assignments");
+            if (!folder.exists()) {
+                folder.mkdirs(); // Create folder if it doesn't exist
+            }
+
+            File destination = new File(folder, selectedFile.getName());
+
+            try {Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                uploadedAssignment3File = destination;  // 💡 Save uploaded file path
+                JOptionPane.showMessageDialog(null, "File uploaded successfully!");
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "File upload failed: " + e.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "File selection cancelled.");
+        }
+    }//GEN-LAST:event_upload_btn9ActionPerformed
+
+    private void open_btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_open_btn9ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().open(uploadedAssignment3File);
+                } catch (IOException e) {
+                    JOptionPane.showMessageDialog(null, "Cannot open file: " + e.getMessage());
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Desktop is not supported on this system.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to open.");
+        }
+    }//GEN-LAST:event_open_btn9ActionPerformed
+
+    private void Delete_btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_btn9ActionPerformed
+        // TODO add your handling code here:
+        if (uploadedAssignment3File != null && uploadedAssignment3File.exists()) {
+            int confirm = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to delete the uploaded file?",
+                "Confirm Deletion",
+                JOptionPane.YES_NO_OPTION);
+
+            if (confirm == JOptionPane.YES_OPTION) {
+                if (uploadedAssignment3File.delete()) {
+                    JOptionPane.showMessageDialog(null, "File deleted successfully!");
+                    uploadedAssignment3File = null; // Clear the reference
+                } else {
+                    JOptionPane.showMessageDialog(null, "File could not be deleted.");
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No uploaded file to delete.");
+        }
+    }//GEN-LAST:event_Delete_btn9ActionPerformed
+
+    private void TTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TTableActionPerformed
+        // TODO add your handling code here:
+        ttable table = new ttable();
+        table.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_TTableActionPerformed
     
    
     
@@ -776,6 +1137,12 @@ public class assignments_app3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Assignments_btn;
+    private javax.swing.JButton Delete_btn;
+    private javax.swing.JButton Delete_btn1;
+    private javax.swing.JButton Delete_btn2;
+    private javax.swing.JButton Delete_btn3;
+    private javax.swing.JButton Delete_btn8;
+    private javax.swing.JButton Delete_btn9;
     private javax.swing.JButton English_btn;
     private javax.swing.JButton HND_btn;
     private javax.swing.JButton Home_btn;
@@ -783,24 +1150,6 @@ public class assignments_app3 extends javax.swing.JFrame {
     private javax.swing.JButton TTable;
     private javax.swing.JButton cources;
     private javax.swing.JButton exitButton;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -824,6 +1173,18 @@ public class assignments_app3 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JButton logout;
+    private javax.swing.JButton open_btn;
+    private javax.swing.JButton open_btn1;
+    private javax.swing.JButton open_btn2;
+    private javax.swing.JButton open_btn3;
+    private javax.swing.JButton open_btn8;
+    private javax.swing.JButton open_btn9;
     private Panel_redondo.PanelRound panelRound1;
+    private javax.swing.JButton upload_btn;
+    private javax.swing.JButton upload_btn1;
+    private javax.swing.JButton upload_btn2;
+    private javax.swing.JButton upload_btn3;
+    private javax.swing.JButton upload_btn8;
+    private javax.swing.JButton upload_btn9;
     // End of variables declaration//GEN-END:variables
 }

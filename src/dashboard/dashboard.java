@@ -5,14 +5,13 @@
 package dashboard;
 
 import assignments.assignments_app;
-import grades.grades_page;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import learning_management_system.login.loginApllication;
 import Cources.cources;
 import Cources.cources2;
 import Cources.cources3;
-
+import Time_table.ttable;
 /**
  *
  * @author Marwan
@@ -111,6 +110,11 @@ public class dashboard extends javax.swing.JFrame {
         TTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/schedule 1.png"))); // NOI18N
         TTable.setText(" Time Table  ");
         TTable.setPreferredSize(new java.awt.Dimension(324, 69));
+        TTable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TTableActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/profile 1.png"))); // NOI18N
 
@@ -448,14 +452,23 @@ public class dashboard extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        cources cource1 = new cources();
+        cource1.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        cources3 cource3 = new cources3();
+        cource3.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        cources2 cource2 = new cources2();
+        cource2.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void Assignments_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Assignments_btnActionPerformed
@@ -464,6 +477,13 @@ public class dashboard extends javax.swing.JFrame {
         ass.setVisible(true);
         dispose();
     }//GEN-LAST:event_Assignments_btnActionPerformed
+
+    private void TTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TTableActionPerformed
+        // TODO add your handling code here:
+        ttable table = new ttable();
+        table.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_TTableActionPerformed
 
     /**
      * @param args the command line arguments
