@@ -84,4 +84,4 @@ This LMS simulates essential educational tasks found in modern online learning p
 
 ![Screenshot 2025-06-05 111237](https://github.com/user-attachments/assets/2dd83fb5-cf18-477d-b8eb-86a370e6f5bf)
 
-Done by: Marwan Mohamed (2nd year computer engineering students) for: Java Essentials & OOP Project Date: may 2025
+Done by: Marwan Mohamed (2nd year computer engineering student) for: Java Essentials & OOP Project Date: may 2025
