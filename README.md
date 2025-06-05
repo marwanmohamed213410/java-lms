@@ -41,7 +41,6 @@ This LMS simulates essential educational tasks found in modern online learning p
 - Sign-up and session handling
 - Validation rules:
   - Password must be at least 8 characters with letters and numbers
-- Profile editing with validation
 
 ### 2. Dashboard
 - View recent courses, lectures, and assignments
